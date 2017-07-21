@@ -10,6 +10,9 @@ class PageController extends Controller
 {
     public function index()
     {
+        $posts=\App\Post::all();
+
+        //return $posts;
         return view('index');
     }
 
